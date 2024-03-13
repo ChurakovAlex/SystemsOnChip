@@ -1,0 +1,6 @@
+Breakpoint File Version 1.0
+33 true C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TaylorSqrt.sv
+47 true C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TaylorSqrt.sv
+102 true C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TaylorSqrt.sv
+36 true C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TaylorSqrt.sv
+60 true C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TaylorSqrt.sv
