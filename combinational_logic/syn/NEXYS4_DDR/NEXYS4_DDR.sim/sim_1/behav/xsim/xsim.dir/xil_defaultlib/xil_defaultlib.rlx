@@ -1,0 +1,23 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/SoC/activecore/designs/rtl/ram/ram.v,1710258466,verilog,,C:/SoC/activecore/designs/rtl/ram/ram_dual.v,,ram,,,,,,,,
+C:/SoC/activecore/designs/rtl/ram/ram_dual.v,1710258466,verilog,,,,ram_dual,,,,,,,,
+C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v,1710258466,verilog,,C:/SoC/activecore/designs/rtl/ram/ram.v,,ram_dual_memsplit,,,,,,,,
+C:/SoC/activecore/designs/rtl/reset_sync/reset_sync.v,1710258466,verilog,,C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v,,reset_sync,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/hw/uart_rx.v,1710258466,verilog,,C:/SoC/activecore/designs/rtl/udm/hw/udm_controller.v,,uart_rx,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/hw/uart_tx.v,1710258466,verilog,,C:/SoC/activecore/designs/rtl/reset_sync/reset_sync.v,,uart_tx,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/hw/udm.v,1710258466,verilog,,C:/SoC/activecore/designs/rtl/udm/hw/uart_rx.v,,udm,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/hw/udm_controller.v,1710258466,verilog,,C:/SoC/activecore/designs/rtl/udm/hw/uart_tx.v,,udm_controller,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v,1710332110,verilog,,,,sys_clk;sys_clk_sys_clk_clk_wiz,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/DecConvers.sv,1710419037,systemVerilog,,C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/MulBack.sv,,DecConvers,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.sv,1710326604,systemVerilog,,C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.sv,,FloatingAddSub;priority_encoder,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingMultiplication.sv,1710400380,systemVerilog,,C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/DecConvers.sv,,FloatingMultiplication,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/MulBack.sv,1710419933,systemVerilog,,,,MulBack,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TaylorSqrt.sv,1710417290,systemVerilog,,C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/FloatingAddSub.sv,,TaylorSqrt,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TaylorTerm.sv,1710411449,systemVerilog,,C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/new/TaylorSqrt.sv,,TaylorTerm,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv,1710400414,systemVerilog,,,,MemSplit32;NEXYS4_DDR,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/tb/tb.sv,1710415378,systemVerilog,,C:/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv,C:/SoC/activecore/designs/rtl/udm/tb/udm.svh,tb,,,,,,,,
+C:/SoC/activecore/designs/rtl/udm/tb/udm.svh,1710258466,verilog,,,,,,,,,,,,
