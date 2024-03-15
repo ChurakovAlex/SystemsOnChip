@@ -1,0 +1,23 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram.v,1710509047,verilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram_dual.v,,ram,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram_dual.v,1710509047,verilog,,,,ram_dual,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v,1710509047,verilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram.v,,ram_dual_memsplit,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/reset_sync/reset_sync.v,1710509047,verilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v,,reset_sync,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/uart_rx.v,1710508996,verilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/udm_controller.v,,uart_rx,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/uart_tx.v,1710508996,verilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/reset_sync/reset_sync.v,,uart_tx,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/udm.v,1710508996,verilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/uart_rx.v,,udm,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/udm_controller.v,1710508996,verilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/uart_tx.v,,udm_controller,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv,1710514599,systemVerilog,,,,MemSplit32;NEXYS4_DDR,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v,1710512824,verilog,,,,sys_clk;sys_clk_sys_clk_clk_wiz,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1710508996,verilog,,,,glbl,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/DecConvers.sv,1710513950,systemVerilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/MulBack.sv,,DecConvers,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingAddSub.sv,1710508996,systemVerilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingMultiplication.sv,,FloatingAddSub;priority_encoder,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingMultiplication.sv,1710508996,systemVerilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/DecConvers.sv,,FloatingMultiplication,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/MulBack.sv,1710514291,systemVerilog,,,,MulBack,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/TaylorSqrt.sv,1710513627,systemVerilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingAddSub.sv,,TaylorSqrt,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/TaylorTerm.sv,1710508996,systemVerilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/TaylorSqrt.sv,,TaylorTerm,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/tb/tb.sv,1710508996,systemVerilog,,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv,C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/tb/udm.svh,tb,,,,,,,,
+C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/tb/udm.svh,1710508996,verilog,,,,,,,,,,,,

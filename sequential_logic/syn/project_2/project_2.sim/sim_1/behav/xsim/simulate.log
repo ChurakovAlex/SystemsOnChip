@@ -1,0 +1,11 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x800000ff, data: 0x42440000
+UDM RD32: addr: 0x80000f00, data: 0x40e0089f
+UDM WR32: addr: 0x800000ff, data: 0x4bd91af8
+UDM RD32: addr: 0x80000f00, data: 0x45a76cb7
+UDM WR32: addr: 0x800000ff, data: 0x4ca13e96
+UDM RD32: addr: 0x80000f00, data: 0x460fa9ee
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 19215 ns : File "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/tb/tb.sv" Line 125

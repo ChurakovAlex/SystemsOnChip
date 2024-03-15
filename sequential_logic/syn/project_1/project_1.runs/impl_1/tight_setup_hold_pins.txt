@@ -1,0 +1,20 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                       csr_rdata_reg[12]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[8]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[2]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                       csr_rdata_reg[10]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[6]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[4]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                       csr_rdata_reg[13]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                       csr_rdata_reg[15]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                       csr_rdata_reg[14]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[7]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[3]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                       csr_rdata_reg[11]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[9]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[5]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[1]/D|
+|       clk_out1_sys_clk_1 |         clk_out1_sys_clk |                                                                                        csr_rdata_reg[0]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -140,8 +140,7 @@ logic [31:0] csr_rdata;
 logic[31:0] csr_x_in;  // 0x800000ff - 1000 0000 0000 0000 0000 0000 1111 1111 [writ adress]
 logic[31:0] csr_y_out; // 0x80000f00 - 1000 0000 0000 0000 0000 1111 0000 0000 [read adress]
 
-//arcsin_comb arsin_inst (.x(csr_x_in), .y(csr_y_out));
-TaylorSqrt teylor_sqrt(.clk(clk_gen),.x(csr_x_in), .result(csr_y_out));
+TaylorSqrt teylor_sqrt(.clk(clk_gen), .rst(srst), .x(csr_x_in), .result(csr_y_out));
 
 // ------------- CSR init ------------ [END]
 

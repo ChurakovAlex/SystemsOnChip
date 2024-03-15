@@ -1,0 +1,44 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.ip_user_files/ip/sys_clk/sys_clk_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk
+INFO: [VRFC 10-311] analyzing module sys_clk_sys_clk_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/tb/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+WARNING: [VRFC 10-3824] variable 'ARRSIZE' must explicitly be declared as automatic or static [C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/tb/tb.sv:86]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/NEXYS4_DDR/NEXYS4_DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NEXYS4_DDR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/udm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/udm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/hw/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/reset_sync/reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_memsplit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/ram/ram_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/TaylorTerm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TaylorTerm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/TaylorSqrt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TaylorSqrt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingAddSub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encoder
+INFO: [VRFC 10-311] analyzing module FloatingAddSub
+INFO: [VRFC 10-2458] undeclared symbol exp_a, assumed default net type wire [C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingAddSub.sv:179]
+INFO: [VRFC 10-2458] undeclared symbol exp_b, assumed default net type wire [C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingAddSub.sv:180]
+INFO: [VRFC 10-2458] undeclared symbol perform, assumed default net type wire [C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingAddSub.sv:195]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/FloatingMultiplication.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FloatingMultiplication
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/DecConvers.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DecConvers
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.srcs/sources_1/new/MulBack.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MulBack
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/user/Desktop/SoC/activecore/designs/rtl/udm/syn/project_2/project_2.sim/sim_1/behav/xsim/glbl.v:6]
