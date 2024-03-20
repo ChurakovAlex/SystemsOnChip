@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+151 true C:/SoC/activecore/designs/rtl/sigma/hw/sigma.sv

@@ -1,0 +1,66 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/SoC/activecore/designs/rtl/sigma/hw/sigma.sv:70]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.sv:345]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/SoC/activecore/designs/rtl/sigma/hw/sigma.sv:70]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.sv:345]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/SoC/activecore/designs/rtl/ram/ram_dual.v:56]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/SoC/activecore/designs/rtl/ram/ram_dual.v:62]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/SoC/activecore/designs/rtl/ram/ram_dual.v:125]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 56, File C:/SoC/activecore/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 62, File C:/SoC/activecore/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",DEBOUNCER_FACTOR_POW=2,mem_init_data="C:/SoC/activecore/designs/rtl/sigma/sw/apps/taylor_sqrt.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer(FACTOR_POW=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_init_data="C:/SoC/activecore/designs/rtl/sigma/sw/apps/taylor_sqrt.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" Line 3. Module genexu_MUL_DIV doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" Line 42. Module riscv_multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" Line 42. Module riscv_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" Line 3. Module coproc_custom0_wrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(init_type="elf",init_data="C:/SoC/activecore/designs/rtl/sigma/sw/apps/taylor_sqrt.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="elf",init_data="C:/SoC/activecore/designs/rtl/sigma/sw/apps/taylor_sqrt.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/SoC/activecore/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer(FACTOR_POW=2)
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_multiplier
+Compiling module xil_defaultlib.riscv_divider
+Compiling module xil_defaultlib.genexu_MUL_DIV
+Compiling module xil_defaultlib.coproc_custom0_wrapper
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(init_type="elf",init_da...
+Compiling module xil_defaultlib.ram_dual_memsplit(init_type="elf...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_init_data="C:/SoC...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav

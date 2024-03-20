@@ -1,0 +1,1056 @@
+
+*** Running vivado
+    with args -log NEXYS4_DDR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source NEXYS4_DDR.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source NEXYS4_DDR.tcl -notrace
+Command: synth_design -top NEXYS4_DDR -part xc7a100tcsg324-3
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'sys_clk' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'sys_clk' (customized with software release 2019.1) has a different revision in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8608 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1001.676 ; gain = 234.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'NEXYS4_DDR' [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'sys_clk' [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-7956-DESKTOP-LUOGMV1/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'sys_clk' (1#1) [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-7956-DESKTOP-LUOGMV1/realtime/sys_clk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sigma' [C:/SoC/activecore/designs/rtl/sigma/hw/sigma.sv:12]
+	Parameter CPU bound to: riscv_2stage - type: string 
+	Parameter UDM_BUS_TIMEOUT bound to: 104857600 - type: integer 
+	Parameter UDM_RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+	Parameter DEBOUNCER_FACTOR_POW bound to: 20 - type: integer 
+	Parameter delay_test_flag bound to: 0 - type: integer 
+	Parameter mem_init_type bound to: hex - type: string 
+	Parameter mem_init_data bound to: ../sigma/sw/apps/taylor_sqrt.riscv.hex - type: string 
+	Parameter mem_size bound to: 8192 - type: integer 
+	Parameter CSR_LED_ADDR bound to: -2147483648 - type: integer 
+	Parameter CSR_SW_ADDR bound to: -2147483644 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'reset_sync' [C:/SoC/activecore/designs/rtl/reset_sync/reset_sync.v:1]
+	Parameter SYNC_STAGES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reset_sync' (2#1) [C:/SoC/activecore/designs/rtl/reset_sync/reset_sync.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/SoC/activecore/designs/rtl/debouncer/debouncer.v:10]
+	Parameter FACTOR_POW bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (3#1) [C:/SoC/activecore/designs/rtl/debouncer/debouncer.v:10]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (3#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (3#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'sigma_tile' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.sv:19]
+	Parameter corenum bound to: 0 - type: integer 
+	Parameter mem_init_type bound to: hex - type: string 
+	Parameter mem_init_data bound to: ../sigma/sw/apps/taylor_sqrt.riscv.hex - type: string 
+	Parameter mem_size bound to: 8192 - type: integer 
+	Parameter CPU bound to: riscv_2stage - type: string 
+	Parameter PATH_THROUGH bound to: YES - type: string 
+	Parameter SW_RESET_DEFAULT bound to: 0 - type: integer 
+	Parameter IRQ_NUM_POW bound to: 4 - type: integer 
+	Parameter XIF_BITSEL bound to: 31 - type: integer 
+	Parameter SFR_BITSEL bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (3#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (3#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'riscv_2stage' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:9]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:2783]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:2527]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:2886]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:3019]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:3030]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:3328]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:3412]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:3461]
+WARNING: [Synth 8-5858] RAM gensticky_genpstage_IFETCH_TRX_BUF_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM gensticky_genpstage_EXEC_TRX_BUF_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM genpstage_EXEC_TRX_BUF_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM genpstage_IFETCH_TRX_BUF_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_instr_mem_wr_done_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1159]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_instr_mem_rd_done_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1170]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_instr_mem_empty_flag_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1192]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_data_mem_wr_done_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1225]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_data_mem_rd_done_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1236]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_data_mem_empty_flag_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1258]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_coproc_M_if_wr_done_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1291]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_coproc_M_if_rd_done_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1302]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_coproc_M_if_empty_flag_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1324]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_coproc_custom0_if_wr_done_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1357]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_coproc_custom0_if_rd_done_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1368]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genmcopipe_coproc_custom0_if_empty_flag_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1390]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genpstage_IFETCH_TRX_BUF_COUNTER_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1434]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genpstage_IFETCH_TRX_BUF_COUNTER_NEMPTY_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1445]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genpstage_IFETCH_TRX_BUF_COUNTER_FULL_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1456]
+WARNING: [Synth 8-6014] Unused sequential element gensticky_genpstage_EXEC_TRX_BUF_COUNTER_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:1489]
+WARNING: [Synth 8-3936] Found unconnected internal register 'gen261_pipex_var_reg' and it is trimmed from '33' to '32' bits. [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:3444]
+WARNING: [Synth 8-3936] Found unconnected internal register 'gen157_pipex_var_reg' and it is trimmed from '33' to '32' bits. [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:3951]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_2stage' (4#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:9]
+WARNING: [Synth 8-689] width (36) of port connection 'irq_fifo_genfifo_rdata_bi' does not match port width (8) of module 'riscv_2stage' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.sv:209]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (4#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'MemSplit32' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemSplit32' (4#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.svh:13]
+INFO: [Synth 8-6157] synthesizing module 'arb_2m3s' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/arb_2m3s.sv:12]
+	Parameter SFR_BITSEL bound to: 20 - type: integer 
+	Parameter XIF_BITSEL bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'arb_2m3s' (5#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/arb_2m3s.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'irq_adapter' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/irq_adapter.sv:10]
+	Parameter IRQ_NUM_POW bound to: 4 - type: integer 
+	Parameter IRQ_NUM bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'irq_adapter' (6#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/irq_adapter.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'genexu_MUL_DIV' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'riscv_multiplier' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v:42]
+	Parameter MULT_STAGES bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element result_e3_q_reg was removed.  [C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_multiplier' (7#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v:42]
+INFO: [Synth 8-6157] synthesizing module 'riscv_divider' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_divider' (8#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'genexu_MUL_DIV' (9#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'coproc_custom0_wrapper' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'coproc_custom0_wrapper' (10#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual_memsplit' [C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v:1]
+	Parameter init_type bound to: hex - type: string 
+	Parameter init_data bound to: ../sigma/sw/apps/taylor_sqrt.riscv.hex - type: string 
+	Parameter dat_width bound to: 32 - type: integer 
+	Parameter adr_width bound to: 30 - type: integer 
+	Parameter mem_size bound to: 8192 - type: integer 
+	Parameter P0_FRAC bound to: NO - type: string 
+	Parameter P1_FRAC bound to: YES - type: string 
+INFO: [Synth 8-6157] synthesizing module 'ram_dual' [C:/SoC/activecore/designs/rtl/ram/ram_dual.v:1]
+	Parameter init_type bound to: hex - type: string 
+	Parameter init_data bound to: ../sigma/sw/apps/taylor_sqrt.riscv.hex - type: string 
+	Parameter dat_width bound to: 32 - type: integer 
+	Parameter adr_width bound to: 30 - type: integer 
+	Parameter mem_size bound to: 8192 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '../sigma/sw/apps/taylor_sqrt.riscv.hex' is read successfully [C:/SoC/activecore/designs/rtl/ram/ram_dual.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual' (11#1) [C:/SoC/activecore/designs/rtl/ram/ram_dual.v:1]
+WARNING: [Synth 8-6014] Unused sequential element bus0_addr_buf_reg was removed.  [C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v:197]
+WARNING: [Synth 8-6014] Unused sequential element bus0_be_buf_reg was removed.  [C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v:198]
+WARNING: [Synth 8-6014] Unused sequential element bus0_wdata_buf_reg was removed.  [C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual_memsplit' (12#1) [C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sfr' [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sfr.sv:12]
+	Parameter corenum bound to: 0 - type: integer 
+	Parameter SW_RESET_DEFAULT bound to: 0 - type: integer 
+	Parameter IRQ_NUM_POW bound to: 4 - type: integer 
+	Parameter IDCODE_ADDR bound to: 8'b00000000 
+	Parameter CTRL_ADDR bound to: 8'b00000100 
+	Parameter CORENUM_ADDR bound to: 8'b00001000 
+	Parameter IRQ_EN_ADDR bound to: 8'b00010000 
+	Parameter SGI_ADDR bound to: 8'b00010100 
+	Parameter TIMER_CTRL_ADDR bound to: 8'b00100000 
+	Parameter TIMER_PERIOD_ADDR bound to: 8'b00100100 
+	Parameter TIMER_VALUE_ADDR bound to: 8'b00101000 
+INFO: [Synth 8-6155] done synthesizing module 'sfr' (13#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sfr.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'sigma_tile' (14#1) [C:/SoC/activecore/designs/rtl/sigma_tile/hw/sigma_tile.sv:19]
+WARNING: [Synth 8-689] width (36) of port connection 'irq_debounced_bi' does not match port width (16) of module 'sigma_tile' [C:/SoC/activecore/designs/rtl/sigma/hw/sigma.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'udm' [C:/SoC/activecore/designs/rtl/udm/hw/udm.v:10]
+	Parameter BUS_TIMEOUT bound to: 104857600 - type: integer 
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/SoC/activecore/designs/rtl/udm/hw/uart_rx.v:10]
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+	Parameter ST_NOSYNC bound to: 4'b0000 
+	Parameter ST_NOSYNC_WAIT1_1 bound to: 4'b0001 
+	Parameter ST_NOSYNC_WAIT0_2 bound to: 4'b0010 
+	Parameter ST_NOSYNC_WAIT1_3 bound to: 4'b0011 
+	Parameter ST_NOSYNC_WAIT0_4 bound to: 4'b0100 
+	Parameter ST_NOSYNC_WAIT1_5 bound to: 4'b0101 
+	Parameter ST_NOSYNC_WAIT0_6 bound to: 4'b0110 
+	Parameter ST_NOSYNC_WAIT1_7 bound to: 4'b0111 
+	Parameter ST_NOSYNC_WAIT0_8 bound to: 4'b1000 
+	Parameter ST_NOSYNC_WAIT_STOP bound to: 4'b1001 
+	Parameter ST_SYNC bound to: 4'b1010 
+	Parameter ST_SYNC_WAIT_START bound to: 4'b1011 
+	Parameter ST_SYNC_RX_DATA bound to: 4'b1100 
+	Parameter ST_SYNC_WAIT_STOP bound to: 4'b1101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/udm/hw/uart_rx.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (15#1) [C:/SoC/activecore/designs/rtl/udm/hw/uart_rx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/SoC/activecore/designs/rtl/udm/hw/uart_tx.v:10]
+	Parameter RTX_EXTERNAL_OVERRIDE bound to: NO - type: string 
+	Parameter ST_IDLE bound to: 8'b00000000 
+	Parameter ST_START bound to: 8'b00000001 
+	Parameter ST_TX_DATA bound to: 8'b00000010 
+	Parameter ST_STOP bound to: 8'b00000011 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC/activecore/designs/rtl/udm/hw/uart_tx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (16#1) [C:/SoC/activecore/designs/rtl/udm/hw/uart_tx.v:10]
+INFO: [Synth 8-6157] synthesizing module 'udm_controller' [C:/SoC/activecore/designs/rtl/udm/hw/udm_controller.v:10]
+	Parameter BUS_TIMEOUT bound to: 104857600 - type: integer 
+	Parameter SYNC_BYTE bound to: 8'b01010101 
+	Parameter ESCAPE_BYTE bound to: 8'b01011010 
+	Parameter TRX_WR_SUCC_BYTE bound to: 8'b00000000 
+	Parameter TRX_ERR_ACK_BYTE bound to: 8'b00000001 
+	Parameter TRX_ERR_RESP_BYTE bound to: 8'b00000010 
+	Parameter TRX_IRQ_BYTE bound to: 8'b10000000 
+	Parameter IDCODE_CMD bound to: 8'b00000000 
+	Parameter RST_CMD bound to: 8'b10000000 
+	Parameter nRST_CMD bound to: 8'b11000000 
+	Parameter WR_INC_CMD bound to: 8'b10000001 
+	Parameter RD_INC_CMD bound to: 8'b10000010 
+	Parameter WR_NOINC_CMD bound to: 8'b10000011 
+	Parameter RD_NOINC_CMD bound to: 8'b10000100 
+	Parameter IDLE bound to: 8'b00000000 
+	Parameter FETCH_ADDR bound to: 8'b00000001 
+	Parameter FETCH_LENGTH bound to: 8'b00000010 
+	Parameter FETCH_DATA bound to: 8'b00000011 
+	Parameter WAIT_ACK bound to: 8'b00000100 
+	Parameter RD_DATA bound to: 8'b00000101 
+	Parameter TX_RDATA bound to: 8'b00000110 
+	Parameter WAIT_TX bound to: 8'b00000111 
+	Parameter WAIT_RESP bound to: 8'b00001000 
+INFO: [Synth 8-6155] done synthesizing module 'udm_controller' (17#1) [C:/SoC/activecore/designs/rtl/udm/hw/udm_controller.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'udm' (18#1) [C:/SoC/activecore/designs/rtl/udm/hw/udm.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'sigma' (19#1) [C:/SoC/activecore/designs/rtl/sigma/hw/sigma.sv:12]
+WARNING: [Synth 8-689] width (16) of port connection 'gpio_bo' does not match port width (32) of module 'sigma' [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.sv:43]
+INFO: [Synth 8-6155] done synthesizing module 'NEXYS4_DDR' (20#1) [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.sv:1]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[31]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[30]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[29]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[28]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[27]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[26]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[25]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[24]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[23]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[22]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[21]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[20]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[19]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[18]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[17]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[16]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[15]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[14]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[13]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[12]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[11]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[10]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[9]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.addr[8]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.be[3]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.be[2]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.be[1]
+WARNING: [Synth 8-3331] design sfr has unconnected port host\.be[0]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[29]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[28]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[27]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[26]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[25]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[24]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[23]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[22]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[21]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[20]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[19]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[18]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[17]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[16]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[15]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[14]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr0_i[13]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[29]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[28]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[27]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[26]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[25]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[24]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[23]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[22]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[21]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[20]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[19]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[18]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[17]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[16]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[15]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[14]
+WARNING: [Synth 8-3331] design ram_dual has unconnected port adr1_i[13]
+WARNING: [Synth 8-3331] design ram_dual_memsplit has unconnected port bus0_addr_bi[1]
+WARNING: [Synth 8-3331] design ram_dual_memsplit has unconnected port bus0_addr_bi[0]
+WARNING: [Synth 8-3331] design ram_dual_memsplit has unconnected port bus0_be_bi[3]
+WARNING: [Synth 8-3331] design ram_dual_memsplit has unconnected port bus0_be_bi[2]
+WARNING: [Synth 8-3331] design ram_dual_memsplit has unconnected port bus0_be_bi[1]
+WARNING: [Synth 8-3331] design ram_dual_memsplit has unconnected port bus0_be_bi[0]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port clk_i[0]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port rst_i[0]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_resp_bus_genfifo_ack_i[0]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][31]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][30]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][29]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][28]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][27]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][26]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][25]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][24]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][23]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][22]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][21]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][20]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][19]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][18]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][17]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][16]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][15]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][14]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][13]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][12]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][11]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][10]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][9]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][8]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][7]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][6]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][5]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][4]
+WARNING: [Synth 8-3331] design coproc_custom0_wrapper has unconnected port stream_req_bus_genfifo_rdata_bi[instr_code][3]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1357.801 ; gain = 590.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1357.801 ; gain = 590.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1357.801 ; gain = 590.320
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1357.801 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-7956-DESKTOP-LUOGMV1/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Finished Parsing XDC File [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-7956-DESKTOP-LUOGMV1/sys_clk/sys_clk/sys_clk_in_context.xdc] for cell 'sys_clk'
+Parsing XDC File [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.xdc]
+Finished Parsing XDC File [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NEXYS4_DDR_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/NEXYS4_DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1370.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1370.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1370.680 ; gain = 603.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1370.680 ; gain = 603.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-7956-DESKTOP-LUOGMV1/sys_clk/sys_clk/sys_clk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/.Xil/Vivado-7956-DESKTOP-LUOGMV1/sys_clk/sys_clk/sys_clk_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for sys_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1370.680 ; gain = 603.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/SoC/activecore/designs/rtl/debouncer/debouncer.v:37]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/SoC/activecore/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_2stage/sverilog/riscv_2stage.sv:3328]
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/SoC/activecore/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v:138]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'udm_controller'
+INFO: [Synth 8-3971] The signal "ram_dual:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               ST_NOSYNC |                             0000 |                            00000
+       ST_NOSYNC_WAIT1_1 |                             0001 |                            00001
+       ST_NOSYNC_WAIT0_2 |                             0010 |                            00010
+       ST_NOSYNC_WAIT1_3 |                             0011 |                            00011
+       ST_NOSYNC_WAIT0_4 |                             0100 |                            00100
+       ST_NOSYNC_WAIT1_5 |                             0101 |                            00101
+       ST_NOSYNC_WAIT0_6 |                             0110 |                            00110
+       ST_NOSYNC_WAIT1_7 |                             0111 |                            00111
+       ST_NOSYNC_WAIT0_8 |                             1000 |                            01000
+     ST_NOSYNC_WAIT_STOP |                             1001 |                            01001
+                 ST_SYNC |                             1010 |                            01010
+      ST_SYNC_WAIT_START |                             1011 |                            01011
+         ST_SYNC_RX_DATA |                             1100 |                            01100
+       ST_SYNC_WAIT_STOP |                             1101 |                            01101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                             0000
+                ST_START |                               01 |                             0001
+              ST_TX_DATA |                               10 |                             0010
+                 ST_STOP |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                         00000000
+              FETCH_ADDR |                              001 |                         00000001
+            FETCH_LENGTH |                              010 |                         00000010
+                WAIT_ACK |                              011 |                         00000100
+               WAIT_RESP |                              100 |                         00001000
+                TX_RDATA |                              101 |                         00000110
+                 WAIT_TX |                              110 |                         00000111
+              FETCH_DATA |                              111 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'udm_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1370.680 ; gain = 603.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 5     
+	   2 Input      1 Bit       Adders := 4     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---Registers : 
+	               63 Bit    Registers := 1     
+	               32 Bit    Registers := 62    
+	               29 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 84    
++---RAMs : 
+	             256K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     63 Bit        Muxes := 3     
+	   2 Input     33 Bit        Muxes := 10    
+	  10 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 192   
+	   8 Input     32 Bit        Muxes := 7     
+	   3 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 5     
+	  10 Input     32 Bit        Muxes := 1     
+	  11 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 22    
+	  14 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 22    
+	   4 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   8 Input      3 Bit        Muxes := 5     
+	  13 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   8 Input      2 Bit        Muxes := 4     
+	  13 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 403   
+	  13 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 34    
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 10    
+	  15 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module reset_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module riscv_2stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 4     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 40    
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	  10 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 129   
+	   8 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 10    
+	   8 Input      5 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 3     
+	  13 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   8 Input      2 Bit        Muxes := 2     
+	  13 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 263   
+	  13 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module arb_2m3s 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 42    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 16    
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 47    
+	   4 Input      1 Bit        Muxes := 3     
+Module irq_adapter 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	  15 Input      1 Bit        Muxes := 1     
+Module riscv_multiplier 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 2     
+Module riscv_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               63 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     63 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+Module genexu_MUL_DIV 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+Module ram_dual 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	             256K Bit         RAMs := 1     
+Module ram_dual_memsplit 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 1     
+Module sfr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	  11 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   5 Input     32 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+	   6 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 7     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+Module udm_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 6     
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 22    
+Module sigma 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genpstage_EXEC_TRX_LOCAL" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP riscv_multiplier/mult_result_w, operation Mode is: A2*B2.
+DSP Report: register riscv_multiplier/operand_a_e1_q_reg is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: register riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: operator riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: operator riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: Generating DSP riscv_multiplier/mult_result_w, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register riscv_multiplier/operand_a_e1_q_reg is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: register riscv_multiplier/operand_b_e1_q_reg is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: operator riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: operator riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: Generating DSP riscv_multiplier/mult_result_w, operation Mode is: A2*B2.
+DSP Report: register riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: register riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: operator riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: operator riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: Generating DSP riscv_multiplier/mult_result_w, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register riscv_multiplier/operand_b_e1_q_reg is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: register riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: operator riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+DSP Report: operator riscv_multiplier/mult_result_w is absorbed into DSP riscv_multiplier/mult_result_w.
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus1_addr_buf_reg' and it is trimmed from '32' to '15' bits. [C:/SoC/activecore/designs/rtl/ram/ram_dual_memsplit.v:180]
+INFO: [Synth 8-3971] The signal "\sigma/sigma_tile /ram/ram_dual/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[0]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[1]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[2]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[3]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[4]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[5]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[6]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[24]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[25]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[26]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[27]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[28]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[29]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[30]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[7]' (FD) to 'sigma/gpio_bi_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sigma/gpio_bi_reg_reg[31]' (FD) to 'sigma/udm/udm_controller/tx_irq_reg'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[15]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[15]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[2]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[2]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[4]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[4]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[5]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[5]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[6]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[6]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[7]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[8]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[7]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[8]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[8]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[9]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[9]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[10]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[10]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[11]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[12]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[11]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[12]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[12]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[13]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[13]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sigma/sigma_tile /irq_adapter/\irq_buf0_reg[14] )
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/irq_adapter/irq_buf1_reg[14]' (FDR) to 'sigma/sigma_tile/irq_adapter/irq_buf0_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sigma/udm/udm_controller/tx_irq_reg )
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/ram/bus1_be_buf_reg[3]' (FDE) to 'sigma/sigma_tile/ram/bus1_be_buf_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sigma/sigma_tile /ram/p0_wb_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sigma/sigma_tile /riscv/\gensticky_genpsticky_glbl_jump_req_cmd_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sigma/sigma_tile /irq_adapter/\irq_buf0_reg[14] )
+INFO: [Synth 8-3886] merging instance 'sigma/sigma_tile/riscv/gensticky_genpstage_EXEC_TRX_BUF_reg[0][nextinstr_addr][0]' (FDRE) to 'sigma/sigma_tile/riscv/gensticky_genpstage_EXEC_TRX_BUF_reg[0][curinstr_addr][0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:18 . Memory (MB): peak = 1495.422 ; gain = 727.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\sigma/sigma_tile /ram | ram_dual/ram_reg | 8 K x 32(READ_FIRST)   | W | R | 8 K x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 8      | 
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping	Report (see note below)
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|riscv_multiplier | A2*B2            | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|riscv_multiplier | (PCIN>>17)+A2*B2 | 16     | 16     | -      | -      | 30     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|genexu_MUL_DIV   | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|riscv_multiplier | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 47     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1495.422 ; gain = 727.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\sigma/sigma_tile /ram | ram_dual/ram_reg | 8 K x 32(READ_FIRST)   | W | R | 8 K x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 8      | 
++-----------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance sigma/sigma_tile/ram/ram_dual/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:24 ; elapsed = 00:02:25 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:26 ; elapsed = 00:02:27 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:26 ; elapsed = 00:02:27 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sys_clk       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |sys_clk    |     1|
+|2     |CARRY4     |   157|
+|3     |DSP48E1    |     4|
+|4     |LUT1       |   163|
+|5     |LUT2       |   620|
+|6     |LUT3       |   518|
+|7     |LUT4       |   487|
+|8     |LUT5       |   553|
+|9     |LUT6       |  1837|
+|10    |MUXF7      |   133|
+|11    |MUXF8      |    64|
+|12    |RAMB36E1   |     1|
+|13    |RAMB36E1_1 |     1|
+|14    |RAMB36E1_2 |     1|
+|15    |RAMB36E1_3 |     1|
+|16    |RAMB36E1_4 |     1|
+|17    |RAMB36E1_5 |     3|
+|18    |FDPE       |     4|
+|19    |FDRE       |  2204|
+|20    |FDSE       |     4|
+|21    |IBUF       |    19|
+|22    |OBUF       |    17|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------+------------------+------+
+|      |Instance                 |Module            |Cells |
++------+-------------------------+------------------+------+
+|1     |top                      |                  |  6794|
+|2     |  sigma                  |sigma             |  6755|
+|3     |    debouncer            |debouncer         |    59|
+|4     |    reset_sync           |reset_sync        |     7|
+|5     |    sigma_tile           |sigma_tile        |  5722|
+|6     |      arb_cpu            |arb_2m3s          |   138|
+|7     |      genexu_MUL_DIV     |genexu_MUL_DIV    |   689|
+|8     |        riscv_divider    |riscv_divider     |   540|
+|9     |        riscv_multiplier |riscv_multiplier  |   146|
+|10    |      irq_adapter        |irq_adapter       |    60|
+|11    |      ram                |ram_dual_memsplit |   179|
+|12    |        ram_dual         |ram_dual          |   126|
+|13    |      riscv              |riscv_2stage      |  4450|
+|14    |      sfr                |sfr               |   204|
+|15    |    udm                  |udm               |   886|
+|16    |      uart_rx            |uart_rx           |   189|
+|17    |      uart_tx            |uart_tx           |   136|
+|18    |      udm_controller     |udm_controller    |   561|
++------+-------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 1740.492 ; gain = 973.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 99 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:18 ; elapsed = 00:02:26 . Memory (MB): peak = 1740.492 ; gain = 960.133
+Synthesis Optimization Complete : Time (s): cpu = 00:02:27 ; elapsed = 00:02:28 . Memory (MB): peak = 1740.492 ; gain = 973.012
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1740.492 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 366 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1740.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+163 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:32 ; elapsed = 00:02:45 . Memory (MB): peak = 1740.492 ; gain = 1258.094
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1740.492 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/SoC/activecore/designs/rtl/sigma/syn/syn_2stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file NEXYS4_DDR_utilization_synth.rpt -pb NEXYS4_DDR_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 16:51:37 2024...

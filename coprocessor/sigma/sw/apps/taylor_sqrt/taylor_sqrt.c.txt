@@ -1,0 +1,52 @@
+#define IO_LED		(*(volatile unsigned int *) (0x80000000))
+#define IO_SW		(*(volatile unsigned int *) (0x80000004))
+
+#define TERMS_NUMBER 8
+
+float coef(float m, int k) {
+    float num = 1.0;
+    float denum = 1.0;
+    for (int i = 0; i < k; i++) {
+        num = num*(m - i);
+        denum *= i+1;
+    }
+
+    return num / denum;
+}
+
+float taylorSqrt(float x) {
+    float result = 1.0;
+    int exp = 0;
+
+    while (x>1) {
+        x *= 0.1;
+        exp += 1;
+    }
+    x -= 1;
+    
+    for (int i = 1; i < TERMS_NUMBER; i++) {
+        float term_result = 1.0;
+        for (int j = 0; j < i; j++)
+            term_result *= x;
+        
+        result += coef(0.5, i) * term_result;
+    }
+    
+    if (exp & 1) {
+        result *= 3.16227766017;
+        exp -= 1;
+    }
+    exp = exp / 2;
+    while (exp > 0) {
+        result *= 10;
+        exp -= 1;
+    }
+    
+    return result;
+}
+
+int main(int argc, char* argv[]) {
+    IO_LED = 0x55aa55aa;
+    IO_LED = taylorSqrt(49.0);
+    while (1) {}
+}

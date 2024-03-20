@@ -1,0 +1,54 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[24]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[28]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[17]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[26]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                        sigma/sigma_tile/riscv/gensticky_genpstage_EXEC_TRX_BUF_reg[0][alu_op2_wide][32]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[19]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[31]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                     sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[9]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[29]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                     sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[4]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[20]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                        sigma/sigma_tile/riscv/gensticky_genpstage_EXEC_TRX_BUF_reg[0][alu_op1_wide][32]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[22]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[23]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[27]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[18]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[15]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[14]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                     sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[6]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[21]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[11]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[25]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                     sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[8]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[10]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[30]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][8]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][9]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[12]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                          sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_COUNTER_FULL_reg[0]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                     sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[5]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][0]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                     sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[7]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][7]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                        sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_COUNTER_NEMPTY_reg[0]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][1]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[13]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][31]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][resp_done][0]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                        sigma/sigma_tile/riscv/gensticky_genpstage_EXEC_TRX_BUF_reg[0][alu_op1_wide][31]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[16]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                     sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[2]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdreq_pending][0]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][30]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][11]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][27]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][10]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][4]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][26]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |sigma/sigma_tile/riscv/gensticky_genpstage_IDECODE_TRX_BUF_reg[0][genmcopipe_handle_instr_mem][rdata][28]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                               sigma/sigma_tile/riscv/gensticky_genpstage_EXEC_TRX_BUF_reg[0][rd_req][0]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

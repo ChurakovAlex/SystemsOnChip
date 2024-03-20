@@ -1,0 +1,21 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+
+##################################
+#### Loading elf file: C:/SoC/activecore/designs/rtl/sigma/sw/apps/taylor_sqrt.riscv
+e_machine: 0x000000f3 (   RISC-V)
+e_phnum: 0x00000001
+---- HEADER: 0 ----
+p_type: 0x00000001
+p_offset: 0x00000000
+p_vaddr: 0x00000000
+p_paddr: 0x00000000
+p_filesz: 0x00002308
+p_memsz: 0x00002308
+p_flags: 0x00000007
+p_align: 0x00001000
+##################################
+
+### SIMULATION STARTED ###
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 640831250 ps : File "C:/SoC/activecore/designs/rtl/sigma/tb/riscv_tb.sv" Line 133
